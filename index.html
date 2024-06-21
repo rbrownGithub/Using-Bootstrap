@@ -10,42 +10,161 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Custom CSS -->
     <style>
-        /* Add your custom styles here */
+        /* Custom Styles */
+    
+        /* Body and General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
         }
-
+    
+        /* Navbar */
+        .navbar {
+            background-color: #343a40 !important; /* Dark gray background */
+        }
+    
+        .navbar-brand {
+            color: #faf6f6; /* White text color */
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+    
+        .navbar-nav .nav-link {
+            color: #fff; /* White text color */
+            font-weight: 500;
+        }
+    
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa; /* Light gray on hover */
+        }
+    
+        /* Hero Section */
         .hero-section {
-            background-image: url('your-hero-background-image.jpg');
+            background-image: url('hero-background.jpg');
             background-size: cover;
-            color: white;
+            background-position: center;
+            color: #0a0a0a;
             text-align: center;
-            padding: 200px 0;
+            padding: 150px 0;
         }
-
+    
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+    
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+    
         .hero-btn {
-            margin-top: 20px;
+            font-size: 1.1rem;
+            padding: 12px 30px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
         }
-
+    
+        .hero-btn:hover {
+            background-color: #17a2b8; /* Bootstrap's primary color */
+        }
+    
+        /* About Section */
         .about-section {
+            background-color: #fff;
             padding: 100px 0;
         }
-
+    
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+    
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    
+        /* Features Section */
         .features-section {
+            background-color: #f8f9fa;
             padding: 100px 0;
         }
-
+    
+        .features-section .card {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+    
+        .features-section .card:hover {
+            transform: translateY(-10px);
+        }
+    
+        .features-section .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+    
+        .features-section .card-text {
+            font-size: 1.1rem;
+        }
+    
+        /* Contact Section */
         .contact-section {
+            background-color: #343a40;
+            color: #fff;
             padding: 100px 0;
         }
-
+    
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+    
+        .contact-section .form-control {
+            background-color: #495057;
+            border-color: #495057;
+            color: #fff;
+        }
+    
+        .contact-section .form-control:focus {
+            background-color: #495057;
+            border-color: #6c757d;
+            color: #fff;
+            box-shadow: none;
+        }
+    
+        .contact-section .btn-primary {
+            background-color: #17a2b8; /* Bootstrap's primary color */
+            border-color: #17a2b8; /* Bootstrap's primary color */
+            font-size: 1.1rem;
+            padding: 12px 30px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .contact-section .btn-primary:hover {
+            background-color: #138496; /* Darker shade of primary color */
+            border-color: #138496; /* Darker shade of primary color */
+        }
+    
+        /* Footer */
         .footer {
-            background-color: #333;
-            color: white;
+            background-color: #343a40;
+            color: #fff;
             padding: 30px 0;
             text-align: center;
         }
+    
+        .footer p {
+            margin-bottom: 0;
+        }
     </style>
+    
 </head>
 
 <body>
@@ -75,10 +194,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center">
+    <section class="hero-section text-center" style="background-image: url('https://www.eventstodayz.com/wp-content/uploads/2017/07/welcome-pictures-2017.png');">
         <div class="container">
             <h1>Welcome to Your Website</h1>
-            <p class="lead">A catchy slogan or description</p>
+            <p class="lead">You have made it to the right place</p>
             <a href="#" class="btn btn-primary btn-lg hero-btn">Get Started</a>
         </div>
     </section>
@@ -89,11 +208,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero a turpis
-                        bibendum, vitae feugiat urna efficitur.</p>
+                    <p>This is the About Section.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="about-image.jpg" alt="About Us Image" class="img-fluid">
+                    <img src="https://wallpaperaccess.com/full/5653640.jpg" alt="About Us Image" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -107,8 +225,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="bi bi-alarm"></i>
-                            <h5 class="card-title">Feature 1</h5>
-                            <p class="card-text">Description of feature 1</p>
+                            <h5 class="card-title">Feature 1: Real-time Updates</h5>
+                            <p class="card-text">Stay informed with real-time updates on your dashboard.</p>
                         </div>
                     </div>
                 </div>
@@ -116,8 +234,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="bi bi-book"></i>
-                            <h5 class="card-title">Feature 2</h5>
-                            <p class="card-text">Description of feature 2</p>
+                            <h5 class="card-title">Feature 2: Knowledge Base</h5>
+                            <p class="card-text">Access our comprehensive knowledge base anytime, anywhere.</p>
                         </div>
                     </div>
                 </div>
@@ -125,8 +243,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="bi bi-people"></i>
-                            <h5 class="card-title">Feature 3</h5>
-                            <p class="card-text">Description of feature 3</p>
+                            <h5 class="card-title">Feature 3: Collaborative Tools</h5>
+                            <p class="card-text">Enhance teamwork with powerful collaboration tools.</p>
                         </div>
                     </div>
                 </div>
